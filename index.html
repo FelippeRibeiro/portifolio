@@ -43,10 +43,7 @@
           <span> da Bahia - Brasil</span>
         </h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-          consequuntur a mollitia unde, veniam aspernatur quas ea tempore magnam
-          praesentium assumenda aliquid ipsum fuga, voluptatibus quam quo aut
-          culpa non.
+          Atualmente faço estagio no setor de desenvolvimento na SL91, onde tive contato com algumas linguagens e bibliotecas que venho desenvolvendo paralelamente com o curso tecnico em Desenvolvimento de sistemas e também com muita ajuda do <a style="color:rgb(15, 108, 200) ;" href="https://pt.stackoverflow.com/" target="_blank"> StackOverflow </a>  e tutoriais de Indianos no youtube.
         </p>
         <div class="home-social-media">
           <a href="https://www.instagram.com/semtempo.brother/">
@@ -65,11 +62,57 @@
         <a href="#" class="btn">Sobre mim</a>
       </div>
       <div class="home-image">
-        <img src="images/anya.jpg" width="500px" alt="" />
+        <img src="images/eu.png" width="500px" alt="" />
       </div>
     </section>
 
     <section class="services" id="services">
+
+
+      <div class="service-itens">
+        <div class="service-item">
+          <div class="service-item-image">
+            <img src="images/js.png" alt="" />
+          </div>
+          <h3>JAVASCRIPT</h3>
+          <p>
+           Primeira linguagem que me interessei a aprender após pascal no curso, por ser uma linguagem atual que facil uso, e bastante versatil sendo utilizada com node.js ou TypeScript
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="service-itens">
+        <div class="service-item">
+          <div class="service-item-image">
+            <img src="images/node.png" alt="" />
+          </div>
+          <h3>Node.js</h3>
+          <p>
+           Node é um motor de JavaScript que permite que ele seja rodado fora do navegador, e também permite instalação de diversas bibliotecas assim permitindo não so utilizar o JavaScript para aplicaçoes Web.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="service-itens">
+        <div class="service-item">
+          <div class="service-item-image">
+            <img src="images/puppeter.png" id="puppeter" alt="" />
+          </div>
+          <h3>Puppeter</h3>
+          <p>
+          Puppeter é uma biblioteca que nos permite fazer automações em sites usando JavaScript e TypeScript, assim automatizando rotinas e diversas tarefas.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
       <div class="service-itens">
         <div class="service-item">
           <div class="service-item-image">
@@ -77,13 +120,13 @@
           </div>
           <h3>HTML5</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
-            doloribus eum repellendus non architecto mollitia culpa explicabo
-            quibusdam doloremque recusandae fugit nulla, magnam dicta, repellat
-            iusto qui quis ipsam? Natus!
+           A linguagem de marcação de texto, que estou aprendendo juntamente com o JavaScript e CSS.
           </p>
         </div>
       </div>
+
+
+      
     </section>
 
     <!-- sobre mim -->
@@ -118,16 +161,44 @@
         <div class="col">
           <img src="images/code.png" alt="" />
           <div class="portfolio-content-text">
-            <h3>Formatador de CPF</h3>
-            <h5>Formatador</h5>
+          <a href="https://felipperibeiro.github.io/formatar-cpf-2.0/" target="_blank" >  <h3>Formatador de CPF</h3> </a>
+            <h5>Aplicação pessoal</h5>
           </div>
         </div>
 
         <div class="col">
-          <img src="images/git.png" alt="" />
+          <img src="images/sefaz.png" alt="" />
           <div class="portfolio-content-text">
-            <h3>Pedido</h3>
-            <h5>TESTE</h5>
+            <h3>Sefaz Scrap</h3>
+            <h5>Situaçãoes do CNPJ</h5>
+          </div>
+        </div>
+
+            <!-- <a href="" target="_blank">
+              <button
+                class="btn"
+                style="
+                  font-size: small;
+                  text-align: center;
+                  background-color: rgb(213, 219, 223);
+                  color: black;
+                  height: 45px;
+                "
+              ></button>
+            </a>
+
+            <a href="" target="_blank">
+              <button
+                class="btn"
+                style="
+                  font-size: small;
+                  text-align: center;
+                  background-color: rgb(213, 219, 223);
+                  color: black;
+                  height: 45px;
+                "
+              ></button>
+            </a> -->
           </div>
         </div>
 
@@ -179,7 +250,13 @@
               placeholder="Envie sua mensagem"
               required
             />
-            <input type="submit" name="submit" value="ENVIE SUA MENSAGEM" />
+            <input
+              id="input"
+              type="submit"
+              onclick="msgSend();"
+              name="submit"
+              value="ENVIAR"
+            />
           </form>
         </div>
       </div>
@@ -189,8 +266,8 @@
       <p>Todos direitos reservados &copy; 2022</p>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
 
-    <script src="js/script.js" async></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

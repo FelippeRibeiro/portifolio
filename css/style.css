@@ -39,8 +39,8 @@ section {
 
 :root {
   --bg-color: #f5f5f5;
-  --text-color: #1c1c1c;
-  --main-color: #ff6347;
+  --text-color: #000000;
+  --main-color: #b43f11;
   --second-color: #dcdcdc;
   --big-font: 4.5rem;
   --h2-font: 3.2rem;
@@ -194,7 +194,7 @@ header.sticky {
   cursor: pointer;
 }
 
-.service-item-image {
+.service-item-image img {
   max-width: 100%;
   width: 80px;
   height: auto;
@@ -248,32 +248,28 @@ header.sticky {
 .portfolio-head {
   text-align: center;
 }
-
 .portfolio-head h3 {
   font-size: 32px;
   margin-bottom: 20px;
 }
-
 .portfolio-head p {
   font-size: var(--p-font);
-  color: var(--text-color);
+  color: black;
   line-height: 25px;
   margin-bottom: 20px;
 }
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fil, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 2rem;
   align-items: center;
   margin-top: 10px;
   text-align: center;
   cursor: pointer;
 }
-
 .col {
   position: relative;
 }
-
 .col img {
   max-width: 100%;
   width: 350px;
@@ -281,26 +277,35 @@ header.sticky {
   object-fit: cover;
   border-radius: 10px;
 }
-
+.portfolio-content-text {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.portfolio-content-text:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, #333);
+}
 .portfolio-content-text h3 {
   position: absolute;
   width: 100%;
   font-size: 25px;
-  color: rgb(13, 10, 157);
+  color: var(--bg-color);
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
-
 .portfolio-content-text:hover h3 {
   bottom: 50%;
   opacity: 1;
-  height: 100;
 }
-
-.portfolio-content-text:hover h5 {
+.portfolio-content-text h5 {
   position: absolute;
   width: 100%;
   font-size: 16px;
@@ -311,7 +316,6 @@ header.sticky {
   opacity: 0;
   transition: all 0.5s;
 }
-
 .portfolio-content-text:hover h5 {
   bottom: 40%;
   opacity: 1;
@@ -320,7 +324,7 @@ header.sticky {
 .contact {
   background: linear-gradient(360deg, #8b008b, #ba55d3);
   margin-top: 150px;
-  padding: 50px 120px;
+  padding: 50px 205px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +339,7 @@ header.sticky {
 }
 
 .contact-text p {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--bg-color);
   margin-bottom: 20px;
 }
