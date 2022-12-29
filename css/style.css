@@ -36,6 +36,9 @@ section {
   margin: 0 auto;
   padding-top: 100px;
 }
+#services{
+  display: flex;
+}
 
 :root {
   --bg-color: #f5f5f5;
