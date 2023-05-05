@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
-  header.classList.toggle("sticky", window.scrollY > 0);
+	header.classList.toggle("sticky", window.scrollY > 0);
 });
 
 let menu = document.querySelector("#navbar-icon");
@@ -12,13 +12,13 @@ let navlist = document.querySelector(".navbar-header");
 // }
 
 menu.addEventListener("click", () => {
-  menu.classList.toggle("bx-x");
-  navlist.classList.toggle("active");
+	menu.classList.toggle("bx-x");
+	navlist.classList.toggle("active");
 });
 
 const sr = ScrollReveal({
-  distance: "50px",
-  duration: 2500,
-  reset: true,
+	distance: "50px",
+	duration: 2500,
+	reset: true,
 });
-sr.reveal(".home-texte", { delay: 350, origin: "left" });
+sr.reveal("#home-text", { delay: 350, origin: "left" });
