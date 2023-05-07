@@ -21,7 +21,7 @@ const sr = ScrollReveal({
 	duration: 1500,
 	reset: true,
 });
-sr.reveal("#home-text", { delay: 350, origin: "rigth" });
+sr.reveal("#home-text", { delay: 350, origin: "left" });
 
 //Git repositories
 
