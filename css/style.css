@@ -13,6 +13,7 @@
 	--text-color: #000000;
 	--main-color: #b43f11;
 	--second-color: #dcdcdc;
+	--alternative-color: rgba(81, 125, 133, 0.815);
 	--big-font: 4.5rem;
 	--h2-font: 3.2rem;
 	--p-font: 1.2rem;
@@ -343,9 +344,10 @@ header.sticky:hover {
 }
 
 .contact {
-	background: linear-gradient(360deg, #8b008b, #ba55d3);
+	background: var(--alternative-color);
+	opacity: 80%;
 	margin-top: 150px;
-	padding: 50px 205px;
+	padding: 40px 205px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
