@@ -44,7 +44,7 @@
 }
 
 #repositorio:hover {
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.2deg) scale3d(1, 1, 1);
+/* 	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.2deg) scale3d(1, 1, 1); */
 }
 
 #gitRepo:hover #TextDiv h6 {
