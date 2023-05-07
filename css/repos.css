@@ -1,0 +1,56 @@
+#repos {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(4, 1fr);
+	/* background-color: #2196f3; */
+	padding: 10px;
+}
+#repositorio {
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(34, 37, 37);
+	width: 200px;
+	height: 250px;
+	max-width: 200px;
+	max-height: 250px;
+	overflow: hidden;
+	position: relative;
+	/* padding: 10px; */
+	margin: 5px;
+}
+#TextDiv {
+	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	bottom: 5px;
+	left: 3%;
+}
+
+#TextDiv h6 {
+	display: none;
+}
+
+#gitRepo img {
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+	position: absolute;
+	top: -10px;
+}
+
+#repositorio:hover {
+	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.2deg) scale3d(1, 1, 1);
+}
+
+#gitRepo:hover #TextDiv h6 {
+	display: block;
+}
+
+#gitRepo:hover img {
+	opacity: 10%;
+}
