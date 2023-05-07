@@ -466,3 +466,16 @@ header.sticky:hover {
 		grid-template-columns: 2fr;
 	}
 }
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.719);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(45, 45, 51);
+	border-radius: 20px;
+}
